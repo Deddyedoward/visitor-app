@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''apt-get install git -y
+        sh '''apt-get update -q
+apt-get install git -y
 curl -sS https://getcomposer.org/installer | php
 php composer.phar install
 php artisan key:generate
