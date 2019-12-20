@@ -15,6 +15,7 @@ curl -sS https://getcomposer.org/installer | php
 php composer.phar install
 php artisan key:generate
 php artisan serve'''
+        echo 'Laravel development server started on http://localhost:8000/'
       }
     }
 
